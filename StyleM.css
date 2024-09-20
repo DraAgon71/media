@@ -1,0 +1,125 @@
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    display: block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* Bannière */
+.banner {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: white;
+    border-bottom: 5px solid #16a085;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+}
+
+/* Galerie d'images */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% - 50% */
+    gap: 20px;
+    padding: 20px; /* Un padding plus réduit */
+    background-color: #f7f7f7; /* Une couleur plus douce pour l'arrière-plan */
+}
+
+.gallery img {
+    width: 45%; /* Réduit la taille pour éviter qu'elles soient trop grandes */
+    height: auto;
+    margin: 0 auto; /* Centre l'image dans son espace */
+    border-radius: 8px; /* Bords légèrement arrondis */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet propre */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03); /* Réduction de l'effet au survol pour un aspect plus subtil */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Ombre plus douce */
+}
+
+
+
+
+
+
+
+/* Vidéo */
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f4f4f9;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9em;
+}
