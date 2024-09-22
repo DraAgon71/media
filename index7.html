@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet CSS et Médias</title>
+    <link rel="stylesheet" href="StyleM.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière avec bouton -->
+    <section class="banner">
+        <h1>Bienvenue sur notre site</h1>
+        <button class="cta-btn">Découvrir plus</button>
+    </section>
+
+    <!-- Galerie d'images responsive avec lazy loading et images optimisées -->
+    <section class="gallery">
+        <img src="cdm.webp" alt="cdm">
+        <img src="ldc.jpg" alt="ldc">
+    </section>
+
+    <!-- Vidéo responsive avec boutons au-dessus -->
+    <section class="video-section">
+        <!-- Boutons pour contrôler la vidéo, placés au-dessus de la vidéo -->
+        <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="restartVideo()">Redémarrer</button>
+            <button onclick="muteUnmute()">Mute/Unmute</button>
+        </div>
+        
+        <!-- Vidéo avec contrôles intégrés -->
+        <video id="myVideo" width="600" controls loading="lazy">
+            <source src="vid.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Projet Web</p>
+    </footer>
+
+    <script>
+        const video = document.getElementById('myVideo');
+
+        // Fonction pour jouer ou mettre en pause la vidéo
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        // Fonction pour redémarrer la vidéo
+        function restartVideo() {
+            video.currentTime = 0;
+            video.play();
+        }
+
+        // Fonction pour muter/démuter la vidéo
+        function muteUnmute() {
+            video.muted = !video.muted;
+        }
+    </script>
+</body>
+
+</html>
